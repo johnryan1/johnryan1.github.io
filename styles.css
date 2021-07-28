@@ -15,6 +15,19 @@ Date: July 2021
 .btn {
   display: block;
   text-align: center;
+  background-color: var(--blue);
+  text-decoration: none;
+  color: white;
+  line-height: 100%;
+  padding: 10px;
+  margin: 10px;
+  border-style: solid;
+  border-color: white;
+
+}
+.btn:hover {
+  border-style: solid;
+  border-color: black;
 }
  /* header */
  .headnav{
@@ -45,15 +58,64 @@ Date: July 2021
 .main{
   border-style: solid;
   border-color: grey;
-  height: 100px;
+
   box-shadow: var(--shadow);
   margin: 0;
+  display: block;
 }
 .all{
   display: flex;
   flex-direction:column;
 }
+/* body index */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-style: solid;
+  border-color: grey;
+}
+.intro img{
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: var(--shadow)
+}
+.intro p{
+  margin: 10px
+}
+.introtext {
+  display: flex;
+  flex-direction: column;
 
+}
+.introbuttons{
+
+}
+.cards{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+}
+.cards img{
+  width: 100%;
+  max-height: 60%;
+  display: block;
+  object-fit: cover;
+  box-shadow: var(--shadow);
+}
+.card1, .card2, .card3, .card4 {
+  border: solid;
+  padding: 10px;
+  margin: 10px;
+
+  text-align: center;
+}
+.card1 h4, .card2 h4, .card3 h4, .card4 h4 {
+  text-decoration: underline;
+}
  /* footer */
 footer, .headline {
   background-color: black;
@@ -72,7 +134,7 @@ footer p{
 /* size changes */
 @media screen and (min-width:700px) {
   .headnav{
-    flex-direction: row;
+
     justify-content: space-around;
   }
   .headnav a{
@@ -80,6 +142,27 @@ footer p{
     color: black;
 
     width: 90px;
+
+  }
+  .intro, .headnav {
+    flex-direction: row;
+  }
+  .intro {
+
+
+  }
+  .introbuttons{
+    display: flex;
+    justify-content: center;
+  }
+  .cards{
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .card1, .card2, .card3, .card4 {
+    width: 33%;
+    height: 300px;
 
   }
 }
