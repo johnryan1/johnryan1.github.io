@@ -116,6 +116,24 @@ Date: July 2021
 .card1 h4, .card2 h4, .card3 h4, .card4 h4 {
   text-decoration: underline;
 }
+/* body bio */
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.bio img {
+  max-width: 300px;
+  box-shadow: var(--shadow);
+  margin: 10px;
+}
+.bio h2 {
+  text-decoration: underline;
+}
+.bio p {
+  margin: 10px;
+}
  /* footer */
 footer, .headline {
   background-color: black;
@@ -164,5 +182,11 @@ footer p{
     width: 33%;
     height: 300px;
 
+  }
+  .bio {
+    flex-direction: row;
+  }
+  .bio p{
+    text-align:left;
   }
 }
