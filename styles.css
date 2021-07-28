@@ -1,0 +1,85 @@
+/*
+Name: John Ryan
+Date: July 2021
+ */
+
+ /* variables */
+ :root {
+   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+   --blue: #1167b1;
+
+}
+
+
+ /* components */
+.btn {
+  display: block;
+  text-align: center;
+}
+ /* header */
+ .headnav{
+   display: flex;
+   flex-direction: column;
+
+ }
+.headnav a{
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  display: block;
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+.headnav a:hover{
+  background-color: grey;
+  color: white;
+}
+.headline h1{
+  line-height: 90px;
+}
+
+
+ /* body */
+.main{
+  border-style: solid;
+  border-color: grey;
+  height: 100px;
+  box-shadow: var(--shadow);
+  margin: 0;
+}
+.all{
+  display: flex;
+  flex-direction:column;
+}
+
+ /* footer */
+footer, .headline {
+  background-color: black;
+  text-align: center;
+  height: 90px;
+  margin: auto;
+
+  color: white;
+
+
+}
+footer p{
+  font-size: 2em;
+  line-height: 90px;
+}
+/* size changes */
+@media screen and (min-width:700px) {
+  .headnav{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .headnav a{
+    padding: 10px;
+    color: black;
+
+    width: 90px;
+
+  }
+}
