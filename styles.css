@@ -134,6 +134,48 @@ Date: July 2021
 .bio p {
   margin: 10px;
 }
+/* body classes */
+.mainClasses{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.classes li{
+  list-style: none;
+  background-color: grey;
+  margin: 3px;
+  width: 100%;
+  color: white;
+  padding: 2px;
+  box-shadow: var(--shadow);
+
+}
+.classes h2{
+  text-align: center;
+}
+.classes{
+  margin: 10px;
+  width: 50%;
+}
+.main h2{
+  text-decoration: underline;
+}
+.classplan {
+  text-align: center;
+}
+.classImg{
+  margin: 5px;
+}
+.classImg img{
+  width: 100%;
+  height: 200px;
+  display: block;
+  margin:auto;
+  object-fit: cover;
+  border-style: solid;
+  border-color: black;
+}
  /* footer */
 footer, .headline {
   background-color: black;
@@ -188,5 +230,14 @@ footer p{
   }
   .bio p{
     text-align:left;
+  }
+  .mainClasses{
+    border-style: solid;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+  }
+  .futureClasses{
+    border-left-style: solid;
   }
 }
