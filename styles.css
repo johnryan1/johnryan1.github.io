@@ -189,6 +189,7 @@ Date: July 2021
   border-radius: 50%;
   border-style: dashed;
   border-color: gold;
+  min-width: 300px;
 }
 .contactInfo{
   display: flex;
