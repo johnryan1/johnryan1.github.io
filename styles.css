@@ -176,6 +176,39 @@ Date: July 2021
   border-style: solid;
   border-color: black;
 }
+/* body contact */
+.contactTop {
+  text-align: center;
+
+}
+.contactTop img {
+  width: 33%;
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 50%;
+  border-style: dashed;
+  border-color: gold;
+}
+.contactInfo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: black;
+}
+.contactInfo a{
+  color: black;
+}
+.infoSon{
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  border-left: solid;
+  border-right:solid;
+}
+.infoSon a, .infoSon h1{
+  margin: 10px;
+}
  /* footer */
 footer, .headline {
   background-color: black;
